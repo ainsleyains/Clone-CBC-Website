@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Open+Sans:wght@400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+  *, *:before, *:after {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    --hightlight-font: 'Open Sans', sans-serif;
+    --news-font:'Bitter', serif;
+    --primary-color:#111111;
+    --label-color:#FFDC14;
+    --red-color:#E60505;
+    --rci-description:#545454;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    border-bottom: 0.1em solid rgb(236, 236, 236);
+    max-width: 1280px;
+    padding: 0px 1em;
+    z-index: 1000;
+}
+
+.header-left {
+    padding-right: 1em;
+    border-right: 0.1em solid var(--red-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left img {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+}
+
+.header-left a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: var(--hightlight-font);
+    font-weight: 700;
+}
+
+.header-middle {
+    padding: 0.7em 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+
+  
+}
+
+.menu {
+    background-color: #ffff;
+    color: var(--red-color);
+    border: none;
+    font-family: var(--hightlight-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+ 
+}
+
+.header-middle img {
+    width: 1.2em;
+    height: 1.2em;
+
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right img {
+    width: 2.8em;
+    height: 2.8em;
+    padding: 0.6em 1em;
+}
+
+.header-right p{
+    color: var(--rci-description);
+    font-family: var(--hightlight-font);
+    font-size: 0.9rem;
+    display: none;
+}
+
+.subnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0em 1em;
+}
+
+.subnav a {
+    text-decoration: none;
+    color: var(--red-color);
+    font-family:var(--news-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 11px 16px 11px 8px;
+    letter-spacing: 0.01em;
+    
+}
+
+.more {
+    background: #ffff;
+    font-family: var(--hightlight-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.9em 1em;
+    margin-top: 0.5em;
+    
+}
+
+.more img {
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.subnav-text{
+    flex: 1;
+    display: flex;
+    justify-content:flex-start;
+    display: none;
+}
+
+.subnav-text p{
+    font-family: var(--hightlight-font);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 13px 16px;
+}
+
+
+.container{
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ffff;
+}
+
+.highlight {
+    padding: 24px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+    
+}
+
+.card1 {
+    margin: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1.2px solid rgb(214, 214, 214);
+    
+}
+
+.card1 img, .cards-no-label img {
+    width: 100%;
+    object-fit: cover;
+    height: 65vh;
+}
+
+
+.textwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    font-family: var(--hightlight-font);
+
+
+   
+}
+
+
+.labelbox {
+    margin-bottom: 16px;
+}
+.label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--red-color);
+    font-family: var(--hightlight-font);
+}
+
+.card1 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 8px 0px 16px 0px;
+}
+
+.card1 .descrip {
+    font-size: 1rem;
+    
+}
+
+
+.cards-no-label {
+    margin: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1.2px solid rgb(214, 214, 214);
+}
+
+.cards-no-label img {
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+}
+
+.textwrapper-no {
+    padding: 16px 16px 0px 16px;
+    font-family: var(--hightlight-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.twpno-top {
+    margin-top: 8px;
+    margin-bottom: 16px;   
+}
+
+.twnpo-h {
+    font-size: 1rem;
+}
+
+.twpno-bottom {
+    height: 50.4px;
+}
+
+.twnpo-p {
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: var(--rci-description);
+}
+
+.rcibox {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.2px solid rgb(214, 214, 214);
+    
+}
+
+.rci-logo {
+    text-align: center;
+}
+
+.rci-logo img {
+    width: 186px;
+    height: 37.94px;
+    margin: 10px 16px 0 ;
+}
+
+.rci-descrip {
+    font-size: 0.88rem;
+    font-family: var(--hightlight-font);
+    color: var(--rci-description);
+    margin: 10px 16px 8px 16px;
+}
+
+.rci-action {
+    margin: 0 16px 16px 16px;
+}
+
+.rci-action p {
+    color: var(--red-color);
+    font-family: var(--news-font);
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+.bigboxcontainer {
+    width: 288px;
+    height: 288px;
+}
+
+.wrap-news {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: cente;
+}
+
+.news {
+    background-color: rgb(234, 234, 234);
+    padding: 0 16px;
+}
+
+.storylist {
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.newscard1 {
+    margin: 8px;
+    background-color: #ffff;
+}
+
+.news-headline, .headline-section {
+    font-family: var(--hightlight-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+
+.newscard1 img {
+    width: 100%;
+    height: 30vh;
+}
+
+.newscontent {
+    padding: 16px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.news-labelbox {
+    margin-bottom: 16px;
+}
+
+.news-label {
+    color: var(--red-color);
+    font-family: var(--hightlight-font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-top h3 {
+    font-size: 1rem;
+    font-family: var(--news-font);
+    margin: 8px 0px 16px 0px;
+    line-height: 1.4em;
+}
+
+
+.content-bottom {
+    width: 238px;
+    height: 45px;
+}
+
+.content-bottom p {
+    font-size: 0.85rem;
+    color: var(--rci-description);
+    font-family: var(--hightlight-font);
+    margin-top: 8px;
+}
+
+.container2{
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ffff;
+    
+}
+
+.mylocal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px 16px 0px 16px;
+    
+}
+
+
+
+
+.headline-section h2 {
+    font-size: 1.65rem;
+    text-align: left;
+}
+
+.regions, button {
+    font-family: var(--hightlight-font);
+
+}
+
+.regions a {
+    text-decoration: none;
+    padding-right: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0550CB;
+    cursor: pointer;
+}
+
+button {
+    font-size: 0.9rem;
+    color: #0550CB;
+    background-color: #ffff;
+    padding: 3.2px 8px;
+    border: 1px solid;
+}
+
+.radiobox {
+    margin: 50px 0;
+    padding: 32px 16px 16px 16px;
+    font-family: var(--hightlight-font);
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.radiotitle {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.radio {
+    font-size: 1.65rem;
+    margin-bottom: 18px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    padding-left: 19px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    height: 45px;
+    width: 100%
+}
+
+.playing {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0px;
+    background-color: #ffff;
+    width: 100%;
+    
+}
+
+.imgbox, .radio-img {
+    position: relative;
+}
+
+
+.play-img {
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    width: 45px;
+    margin: 5px;
+    background-color: #ffff;
+    border: 10px solid #ffff;
+    border-radius: 20px;
+}
+
+.textbox {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.radioone {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+.ott {
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.radioa {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.radiotext {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-right: 9px;
+}
+
+.cbcradio {
+    width: 99.78px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.icon {
+    font-weight: 700;
+}
+
+.cardslist {
+    margin: 8px;
+    padding:16px;
+    border: 1.2px solid rgb(214, 214, 214);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cardheadline {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-family: var(--hightlight-font);
+    align-self: flex-start;
+}
+
+.cardstext {
+    flex: 1;
+}
+
+
+.cardsimg img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.metatext {
+    margin-top: 8px;
+    font-family: var(--hightlight-font);
+    color: var(--rci-description);
+    font-size: 0.85rem;
+}
+
+.globalfooter {
+    margin-top: 48px;
+    border-top: 0.1em solid rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footerbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.footer-heading {
+    margin-bottom: 16.32px;
+    font-family: var(--hightlight-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    
+}
+
+.footer-connect, .footer-contact, .footer-account, .footer-about, .footer-accessibility, .footer-services {
+    padding: 16px;
+}
+
+
+
+.footeritem, .footerlist a {
+    list-style: none;
+    text-decoration: none;
+    color:#0550CB;
+    margin-bottom: 8px;
+    font-family: var(--hightlight-font);
+    font-size: 0.85rem;
+}
+
+
+.footer-contact, .footer-accessibility {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-contact p, .footer-accessibility p {
+    font-size: 0.85rem;
+    font-family: var(--hightlight-font);
+    margin: 13.6px 0;
+}
+
+
+.footerbodybox p{
+    font-size: 0.85rem;
+    font-family: var(--hightlight-font);
+    margin: 13.6px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 300px;
+}
+
+.basicfooter {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.footerlist-b{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footerlist-b li {
+    list-style: none;
+}
+
+.footeritem-logo {
+    width: 320px;
+    height: 62.05px;
+    padding: 16px;
+ 
+}
+
+.footer-copyright, .footer-radio1 {
+    padding: 16px;
+    font-size: 0.75rem;
+    font-family: var(--hightlight-font);
+    font-weight: 700;
+    color: #ffff;
+}
+
+
+
+
+
+
+@media only screen and (min-width:680px) {
+
+
+    .header-right p {
+        display: flex;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .subnav p{
+        display: flex;
+    }
+
+    .subnav-text {
+        display: flex;
+    }
+
+    .rci-logo img {
+        width: 60%;
+        height: 40%;
+
+    }
+
+    .cards-no-label, .newscard1, .cardheadline {
+        flex-wrap: wrap;
+    }
+
+    .gridcontainer {
+        padding: 24px 16px 0px 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .gridcontainer2, .gridcontainer3 {
+        padding: 24px 16px 0px 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .radiotitle {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100% 
+    }
+
+    .radio {
+        font-size: 2rem;
+        width: 250px;
+    }
+
+  
+
+   
+   
+
+
+
+}
+
+
+@media only screen and (min-width: 732px) {
+
+    .card1 {
+        margin: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 16px;
+    }
+
+    .card1 img {
+        width: 60%;
+        height: 50vh;
+    }
+
+    .cards-no-label, .newscard1 {
+        flex-wrap: wrap;
+    }
+    
+    .cards-no-label img {
+        width: 100%;
+        object-fit: cover;
+        height: 20vh;
+    }
+    
+    .gridcontainer, .gridcontainer3  {
+        padding: 24px 16px 0px 16px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .rci-logo img {
+        width: 80%;
+        height: 40%;
+
+    }
+
+    .gridcontainer2 {
+        padding: 24px 16px 0px 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    
+   
+
+  
+
+   
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1100px) {
+    .gridcontainer2, .gridcontainer3 {
+        padding: 24px 16px 0px 16px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+       
+    }
+
+    .sidebar {
+        margin-top: 24px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
